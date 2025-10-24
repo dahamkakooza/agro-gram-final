@@ -1,0 +1,385 @@
+.continuous-learning-page {
+  padding: 20px;
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.research-integration {
+  grid-column: 1 / -1;
+}
+
+.research-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.research-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.research-content {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.research-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.research-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.research-summary {
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.research-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.training-materials {
+  grid-column: 1;
+}
+
+.materials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.material-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.material-type {
+  font-size: 12px;
+  padding: 4px 8px;
+  background: #e5e7eb;
+  border-radius: 12px;
+  color: #6b7280;
+}
+
+.material-content {
+  flex: 1;
+  margin: 0 16px;
+}
+
+.material-title {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.material-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.material-progress {
+  min-width: 120px;
+  margin-right: 16px;
+}
+
+.certification-tracker {
+  grid-column: 2;
+}
+
+.certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.certification-item {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.certification-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.cert-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.cert-organization {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.cert-expiry {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.cert-progress {
+  margin-top: 8px;
+}
+
+.skill-development {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.skill-category h4 {
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.skill-name {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.learning-recommendations {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.recommendations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.recommendation-item {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.rec-type {
+  font-size: 12px;
+  padding: 4px 8px;
+  background: #3b82f6;
+  color: white;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.rec-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.rec-description {
+  color: #4b5563;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.rec-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.learning-stats {
+  grid-column: 1 / -1;
+  grid-row: 4;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.learning-streak {
+  text-align: center;
+  padding: 20px;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.streak-count {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #d97706;
+}
+
+.streak-description {
+  color: #92400e;
+}
+
+.training-details {
+  padding: 16px 0;
+}
+
+.training-header {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.training-meta {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.description-section,
+.objectives-section,
+.modules-section {
+  margin-bottom: 24px;
+}
+
+.objectives-section ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.objectives-section li {
+  margin-bottom: 8px;
+  color: #4b5563;
+}
+
+.modules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.module-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.module-number {
+  font-weight: bold;
+  color: #6b7280;
+  min-width: 80px;
+}
+
+.module-title {
+  flex: 1;
+  margin: 0 16px;
+}
+
+.module-duration {
+  font-size: 14px;
+  color: #6b7280;
+  margin-right: 16px;
+}
+
+.action-section {
+  margin-top: 24px;
+}
+
+@media (max-width: 1024px) {
+  .learning-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .research-integration,
+  .training-materials,
+  .certification-tracker,
+  .skill-development,
+  .learning-recommendations,
+  .learning-stats {
+    grid-column: 1;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .research-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .research-actions {
+    align-self: flex-end;
+  }
+  
+  .material-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .material-content {
+    margin: 0;
+  }
+  
+  .material-progress {
+    margin-right: 0;
+    width: 100%;
+  }
+}

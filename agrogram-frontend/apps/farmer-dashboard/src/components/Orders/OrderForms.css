@@ -1,0 +1,214 @@
+.order-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 16px;
+}
+
+.form-header h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.form-header p {
+  margin: 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-section small {
+  display: block;
+  margin-top: 4px;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+/* File Upload */
+.file-upload-label {
+  border: 2px dashed #ddd;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.file-upload-label:hover {
+  border-color: #007bff;
+}
+
+.file-upload-label input {
+  display: none;
+}
+
+/* Star Rating */
+.rating-label {
+  display: block;
+}
+
+.star-rating {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.star {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.star.active {
+  color: #ffc107;
+}
+
+/* Checklists */
+.delivery-checklist,
+.commitment-checklist,
+.shipping-checklist {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.delivery-checklist h4,
+.commitment-checklist h4,
+.shipping-checklist h4 {
+  margin: 0 0 12px 0;
+  color: #333;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.checkbox-label input {
+  margin-top: 2px;
+}
+
+/* Order Summary */
+.order-summary,
+.refund-summary {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.order-summary h4,
+.refund-summary h4 {
+  margin: 0 0 12px 0;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.summary-item:last-child {
+  border-bottom: none;
+}
+
+.refund-amount {
+  font-weight: bold;
+  color: #28a745;
+  font-size: 1.1rem;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+/* Form Notices */
+.form-notice {
+  background: #e7f3ff;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-top: 20px;
+  border-left: 4px solid #007bff;
+}
+
+.form-notice p {
+  margin: 0;
+  color: #004085;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .order-form {
+    padding: 16px;
+    margin: 0 16px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .star-rating {
+    justify-content: center;
+  }
+
+  .summary-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+
+/* Loading States */
+.form-loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Success/Error States */
+.form-success {
+  border-left: 4px solid #28a745;
+}
+
+.form-error {
+  border-left: 4px solid #dc3545;
+}

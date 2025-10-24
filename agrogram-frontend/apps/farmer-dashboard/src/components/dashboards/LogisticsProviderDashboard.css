@@ -1,0 +1,180 @@
+/* LogisticsProviderDashboard.css */
+.logistics-provider-dashboard {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.fleet-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.fleet-metric {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #17a2b8;
+}
+
+.delivery-priorities, .scheduled-deliveries {
+  margin-bottom: 20px;
+}
+
+.delivery-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.delivery-item.priority {
+  border-left: 4px solid #dc3545;
+  background: #f8d7da;
+}
+
+.delivery-id {
+  font-weight: 700;
+  color: #17a2b8;
+  min-width: 60px;
+}
+
+.delivery-route, .delivery-time {
+  flex: 1;
+  margin: 0 12px;
+  font-weight: 500;
+}
+
+.delivery-eta, .delivery-status {
+  color: #6c757d;
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+
+.optimization-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.optimization-metric {
+  text-align: center;
+  padding: 16px;
+  background: #e9ecef;
+  border-radius: 8px;
+}
+
+.maintenance-schedule {
+  margin-bottom: 20px;
+}
+
+.maintenance-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.vehicle-id {
+  font-weight: 600;
+  min-width: 80px;
+}
+
+.maintenance-type {
+  flex: 1;
+  margin: 0 12px;
+}
+
+.maintenance-date {
+  color: #6c757d;
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+
+.cost-tracking {
+  margin-top: 20px;
+}
+
+.cost-metrics {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.cost-metric {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: #e9ecef;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.delivery-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.delivery-metric {
+  text-align: center;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.performance-trends {
+  margin-top: 20px;
+}
+
+.trend-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+}
+
+.trend-item.positive {
+  background: #d4edda;
+  color: #155724;
+}
+
+.trend-item.negative {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fleet-summary {
+    grid-template-columns: 1fr;
+  }
+  
+  .delivery-item, .maintenance-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .optimization-metrics, .delivery-metrics {
+    grid-template-columns: 1fr;
+  }
+  
+  .cost-metric {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

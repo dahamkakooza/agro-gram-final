@@ -1,0 +1,350 @@
+.competitor-analysis-page {
+  padding: 20px;
+}
+
+.competitor-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.competitor-overview {
+  grid-column: 1 / -1;
+}
+
+.overview-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.competitor-list {
+  grid-column: 1;
+}
+
+.market-share {
+  grid-column: 2;
+}
+
+.share-chart {
+  height: 300px;
+  margin-top: 16px;
+}
+
+.competitive-landscape {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.landscape-matrix {
+  position: relative;
+  height: 400px;
+  margin-top: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.matrix-axis {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.axis-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.axis-points {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.matrix-points {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.matrix-point {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.matrix-point.high {
+  background: #ef4444;
+}
+
+.matrix-point.medium {
+  background: #f59e0b;
+}
+
+.matrix-point.low {
+  background: #10b981;
+}
+
+.point-label {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  white-space: nowrap;
+  background: white;
+  padding: 2px 6px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  display: none;
+}
+
+.matrix-point:hover .point-label {
+  display: block;
+}
+
+.matrix-axis.vertical {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  justify-content: space-between;
+  padding: 20px 8px;
+}
+
+.strategy-analysis {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.strategies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.strategy-item {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.competitor-name {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.strategy-type {
+  font-size: 14px;
+  color: #3b82f6;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.strategy-details {
+  color: #4b5563;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.recent-moves {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.threat-assessment {
+  grid-column: 1 / -1;
+  grid-row: 4;
+}
+
+.threat-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.threat-item {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.threat-item.high {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.threat-item.medium {
+  background: #fffbeb;
+  border: 1px solid #fed7aa;
+}
+
+.threat-item.low {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.threat-name {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.threat-reason {
+  color: #4b5563;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.threat-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.competitor-details {
+  padding: 16px 0;
+}
+
+.detail-header {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.basic-info p {
+  margin-bottom: 8px;
+  color: #4b5563;
+}
+
+.detail-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section h4 {
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+.section p {
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.section ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.section li {
+  margin-bottom: 8px;
+  color: #4b5563;
+}
+
+.swot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.swot-item h5 {
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+.swot-item.strengths ul {
+  color: #10b981;
+}
+
+.swot-item.weaknesses ul {
+  color: #ef4444;
+}
+
+.recommended-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 1024px) {
+  .competitor-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .competitor-overview,
+  .competitor-list,
+  .market-share,
+  .competitive-landscape,
+  .strategy-analysis,
+  .threat-assessment {
+    grid-column: 1;
+  }
+  
+  .overview-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .threat-matrix {
+    grid-template-columns: 1fr;
+  }
+  
+  .swot-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .overview-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .landscape-matrix {
+    height: 300px;
+  }
+}

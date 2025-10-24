@@ -1,0 +1,86 @@
+.system-monitor {
+  padding: 1rem;
+}
+
+.systems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.system-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+}
+
+.system-card.healthy {
+  border-left: 4px solid #10b981;
+}
+
+.system-card.warning {
+  border-left: 4px solid #f59e0b;
+}
+
+.system-card.critical {
+  border-left: 4px solid #ef4444;
+}
+
+.system-icon {
+  font-size: 2rem;
+}
+
+.system-info {
+  flex: 1;
+}
+
+.system-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.system-status {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.system-card.healthy .system-status {
+  color: #10b981;
+}
+
+.system-card.warning .system-status {
+  color: #f59e0b;
+}
+
+.system-card.critical .system-status {
+  color: #ef4444;
+}
+
+.system-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.alert-btn {
+  padding: 0.5rem 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.alert-btn:hover {
+  background: #2563eb;
+}

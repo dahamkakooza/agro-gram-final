@@ -1,0 +1,74 @@
+.case-manager {
+  padding: 1rem;
+}
+
+.cases-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.case-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.case-item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.case-item.high {
+  border-left: 4px solid #ef4444;
+}
+
+.case-item.medium {
+  border-left: 4px solid #f59e0b;
+}
+
+.case-item.low {
+  border-left: 4px solid #10b981;
+}
+
+.case-icon {
+  font-size: 1.5rem;
+}
+
+.case-details {
+  flex: 1;
+}
+
+.case-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.case-farmer {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.case-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.case-priority {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #6b7280;
+  color: white;
+}

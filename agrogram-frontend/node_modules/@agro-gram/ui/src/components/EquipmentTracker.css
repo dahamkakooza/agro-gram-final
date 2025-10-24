@@ -1,0 +1,109 @@
+.equipment-tracker {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.equipment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.equipment-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.equipment-filters {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+
+.filter-btn.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.equipment-card {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.equipment-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.equipment-card.active {
+  border-color: #28a745;
+  background: #f8fff9;
+}
+
+.equipment-card.maintenance {
+  border-color: #ffc107;
+  background: #fffbf0;
+}
+
+.equipment-icon {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.equipment-info {
+  text-align: center;
+}
+
+.equipment-name {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.equipment-id {
+  display: block;
+  font-size: 11px;
+  color: #6c757d;
+  margin-bottom: 4px;
+}
+
+.equipment-status {
+  display: block;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: #e9ecef;
+  color: #495057;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.equipment-location {
+  display: block;
+  font-size: 11px;
+  color: #6c757d;
+}

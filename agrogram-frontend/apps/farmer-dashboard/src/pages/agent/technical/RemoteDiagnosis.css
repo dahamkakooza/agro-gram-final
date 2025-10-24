@@ -1,0 +1,177 @@
+.remote-diagnosis-page {
+  padding: 20px;
+}
+
+.diagnosis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.upload-section {
+  grid-column: 1;
+}
+
+.analysis-results {
+  grid-column: 2;
+}
+
+.diagnosis-tools {
+  grid-column: 1;
+}
+
+.recent-diagnoses {
+  grid-column: 2;
+}
+
+.uploaded-images {
+  margin-top: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.analyzing {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.analyzing p {
+  margin-top: 16px;
+  color: #6b7280;
+}
+
+.results-content {
+  padding: 16px 0;
+}
+
+.diagnosis-header {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.diagnosis-header h4 {
+  margin: 0 0 8px 0;
+  color: #1f2937;
+}
+
+.confidence {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.severity {
+  font-weight: bold;
+}
+
+.severity.moderate {
+  color: #f59e0b;
+}
+
+.severity.high {
+  color: #ef4444;
+}
+
+.severity.low {
+  color: #10b981;
+}
+
+.recommendations,
+.treatment-plan {
+  margin-bottom: 20px;
+}
+
+.recommendations h5,
+.treatment-plan h5 {
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+.recommendations ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.recommendations li {
+  margin-bottom: 8px;
+  color: #4b5563;
+}
+
+.treatment-details p {
+  margin-bottom: 8px;
+  color: #4b5563;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.diagnoses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.diagnosis-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.diagnosis-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.diagnosis-info span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6b7280;
+}
+
+@media (max-width: 1024px) {
+  .diagnosis-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .upload-section,
+  .analysis-results,
+  .diagnosis-tools,
+  .recent-diagnoses {
+    grid-column: 1;
+  }
+  
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}

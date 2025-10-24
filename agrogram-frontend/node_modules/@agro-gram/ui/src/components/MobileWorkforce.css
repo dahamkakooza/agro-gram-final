@@ -1,0 +1,93 @@
+.mobile-workforce {
+  padding: 1rem;
+}
+
+.technicians-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.technician-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+}
+
+.technician-avatar {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  border-radius: 50%;
+}
+
+.technician-info {
+  flex: 1;
+}
+
+.technician-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.technician-specialty {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.technician-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status.available {
+  background-color: #10b981;
+  color: white;
+}
+
+.status.busy {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.status.offline {
+  background-color: #6b7280;
+  color: white;
+}
+
+.location {
+  color: #6b7280;
+}
+
+.assign-btn {
+  padding: 0.5rem 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.assign-btn:hover {
+  background: #2563eb;
+}

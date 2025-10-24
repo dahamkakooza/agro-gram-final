@@ -1,0 +1,18 @@
+.multi-monitor-support {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+@media (min-width: 1200px) {
+  .multi-monitor-support {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1800px) {
+  .multi-monitor-support {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,282 @@
+/* src/components/shared/CalendarIntegration.css */
+.calendar-integration {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.calendar-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.control-button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.control-button:hover {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.today-button {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.today-button:hover {
+  background: #0056b3;
+}
+
+.view-selector {
+  display: flex;
+  gap: 4px;
+  background: #e9ecef;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.view-button {
+  padding: 6px 12px;
+  border: none;
+  background: transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+
+.view-button.active {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.view-button:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.calendar-body {
+  flex: 1;
+  padding: 20px;
+  background: #f5f5f5;
+  overflow: auto;
+}
+
+.calendar-month,
+.calendar-week {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.month-header,
+.week-header {
+  padding: 16px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  font-weight: 600;
+  color: #343a40;
+  text-align: center;
+}
+
+.calendar-placeholder {
+  padding: 60px 20px;
+  text-align: center;
+  color: #6c757d;
+}
+
+.calendar-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.event-count {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.calendar-sidebar {
+  width: 300px;
+  border-left: 1px solid #e9ecef;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.upcoming-events,
+.event-details-panel {
+  padding: 20px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.upcoming-events h4,
+.event-details-panel h4 {
+  margin: 0 0 16px 0;
+  color: #343a40;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-left: 3px solid #007bff;
+}
+
+.event-item:hover {
+  background: #e9ecef;
+  transform: translateX(2px);
+}
+
+.event-item.meeting {
+  border-left-color: #28a745;
+}
+
+.event-item.deadline {
+  border-left-color: #dc3545;
+}
+
+.event-item.appointment {
+  border-left-color: #ffc107;
+}
+
+.event-time {
+  font-size: 12px;
+  font-weight: 600;
+  color: #495057;
+  min-width: 50px;
+}
+
+.event-details {
+  flex: 1;
+}
+
+.event-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 2px;
+}
+
+.event-location {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.event-type-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #007bff;
+}
+
+.event-item.meeting .event-type-indicator {
+  background: #28a745;
+}
+
+.event-item.deadline .event-type-indicator {
+  background: #dc3545;
+}
+
+.event-item.appointment .event-type-indicator {
+  background: #ffc107;
+}
+
+.event-details-panel {
+  background: #f8f9fa;
+}
+
+.event-detail {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.event-detail strong {
+  color: #343a40;
+}
+
+.event-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.action-button {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+
+.action-button.edit:hover {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.action-button.delete:hover {
+  background: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .calendar-integration {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .calendar-sidebar {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .calendar-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .view-selector {
+    width: 100%;
+    justify-content: center;
+  }
+}

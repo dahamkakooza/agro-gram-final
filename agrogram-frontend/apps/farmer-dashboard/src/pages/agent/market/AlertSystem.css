@@ -1,0 +1,168 @@
+.alert-system-page {
+  padding: 20px;
+}
+
+.alert-system-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.preferences-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.preference-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.preference-info {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.preference-label {
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #1f2937;
+}
+
+.preference-description {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+.active-alerts {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.alert-history {
+  grid-column: 1 / -1;
+  grid-row: 2;
+}
+
+.alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.alert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.alert-item.unread {
+  background: #f0f9ff;
+  border-color: #bae6fd;
+}
+
+.alert-item.read {
+  background: #f8fafc;
+  opacity: 0.8;
+}
+
+.alert-icon {
+  font-size: 20px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.alert-content {
+  flex: 1;
+}
+
+.alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.alert-title {
+  font-weight: bold;
+  color: #1f2937;
+  margin-right: 12px;
+}
+
+.alert-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.alert-description {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.alert-date {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.alert-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+@media (max-width: 1024px) {
+  .alert-system-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .active-alerts {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .alert-history {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  .alert-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .alert-item {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .alert-actions {
+    align-self: stretch;
+    justify-content: flex-end;
+  }
+}

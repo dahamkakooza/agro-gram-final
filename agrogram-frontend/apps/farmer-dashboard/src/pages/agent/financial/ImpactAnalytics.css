@@ -1,0 +1,174 @@
+.impact-analytics-page {
+  padding: 20px;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.farmer-impact {
+  grid-column: 1 / -1;
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.impact-item {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.impact-item.positive {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.impact-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.impact-item.positive .impact-value {
+  color: #10b981;
+}
+
+.impact-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.revenue-trends {
+  grid-column: 1 / -1;
+}
+
+.chart-container {
+  height: 300px;
+  margin-top: 16px;
+}
+
+.sector-impact {
+  grid-column: 1;
+}
+
+.sector-chart {
+  height: 300px;
+  margin-top: 16px;
+}
+
+.success-stories {
+  grid-column: 2;
+}
+
+.stories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.story-item {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.story-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.success-badge {
+  background: #10b981;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.story-details p {
+  margin-bottom: 12px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.story-metrics {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.regional-impact {
+  grid-column: 1;
+}
+
+.sustainability-metrics {
+  grid-column: 2;
+}
+
+.sustainability-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.metric-card {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.metric-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.metric-value {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #1f2937;
+}
+
+.metric-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+@media (max-width: 1024px) {
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .impact-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .sustainability-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .revenue-trends,
+  .sector-impact,
+  .success-stories,
+  .regional-impact,
+  .sustainability-metrics {
+    grid-column: 1;
+  }
+}

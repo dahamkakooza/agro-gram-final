@@ -1,0 +1,222 @@
+/* LegalSpecialistDashboard.css */
+.legal-specialist-dashboard {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.case-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.case-metric {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #6f42c1;
+}
+
+.update-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.update-title {
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.update-date, .update-impact {
+  color: #6c757d;
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+
+.audit-checklist {
+  margin: 16px 0;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.item-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.item-deadline {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.audit-readiness {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #e9ecef;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.readiness-bar {
+  flex: 1;
+  height: 8px;
+  background: #dee2e6;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.readiness-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #28a745, #20c997);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.template-item, .case-doc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.template-name, .doc-case {
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.template-usage, .doc-type, .doc-date {
+  color: #6c757d;
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+
+.mediation-item, .arbitration-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.parties, .case-id {
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.dispute-type, .arbitration-status {
+  flex: 1;
+  margin: 0 12px;
+  color: #6c757d;
+}
+
+.mediation-stage, .next-hearing {
+  color: #6c757d;
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+
+.resource-item, .precedent-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.resource-title, .precedent-case {
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.resource-category, .precedent-outcome, .resource-jurisdiction, .precedent-relevance {
+  color: #6c757d;
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+
+.case-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.compliance-stats {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.compliance-stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .case-summary {
+    grid-template-columns: 1fr;
+  }
+  
+  .update-item, .template-item, .case-doc-item, 
+  .mediation-item, .arbitration-item, 
+  .resource-item, .precedent-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .checklist-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .audit-readiness {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .readiness-bar {
+    width: 100%;
+  }
+  
+  .case-metrics {
+    grid-template-columns: 1fr;
+  }
+  
+  .compliance-stat {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

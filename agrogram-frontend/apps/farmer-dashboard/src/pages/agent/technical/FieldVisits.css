@@ -1,0 +1,144 @@
+.field-visits-page {
+  padding: 20px;
+}
+
+.visits-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.today-visits {
+  grid-column: 1;
+}
+
+.visits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.visit-item {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.visit-item.today {
+  background: #f0f9ff;
+  border-color: #bae6fd;
+}
+
+.visit-time {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.visit-details {
+  margin-bottom: 12px;
+}
+
+.farmer-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.visit-purpose {
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.visit-location {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.visit-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.no-visits {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.upcoming-visits {
+  grid-column: 2;
+}
+
+.visit-calendar {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.visit-preparation {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.preparation-checklist {
+  margin-bottom: 20px;
+}
+
+.checklist-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.checklist-item input[type="checkbox"] {
+  margin: 0;
+}
+
+.quick-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+@media (max-width: 1024px) {
+  .visits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .today-visits,
+  .upcoming-visits,
+  .visit-calendar,
+  .visit-preparation {
+    grid-column: 1;
+  }
+  
+  .upcoming-visits {
+    grid-row: 2;
+  }
+  
+  .visit-calendar {
+    grid-row: 3;
+  }
+  
+  .visit-preparation {
+    grid-row: 4;
+  }
+}

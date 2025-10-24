@@ -1,0 +1,104 @@
+.health-monitor {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.health-monitor h3 {
+  margin: 0 0 16px 0;
+  color: #333;
+}
+
+.animals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.animal-card {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.animal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.animal-card.healthy {
+  border-color: #28a745;
+  background: #f8fff9;
+}
+
+.animal-card.warning {
+  border-color: #ffc107;
+  background: #fffbf0;
+}
+
+.animal-card.critical {
+  border-color: #dc3545;
+  background: #f8f9fa;
+}
+
+.animal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.animal-id {
+  font-weight: 600;
+  color: #333;
+}
+
+.health-status {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.animal-card.healthy .health-status {
+  background: #d4edda;
+  color: #155724;
+}
+
+.animal-card.warning .health-status {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.animal-card.critical .health-status {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.animal-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric-label {
+  display: block;
+  font-size: 11px;
+  color: #6c757d;
+  margin-bottom: 2px;
+}
+
+.metric-value {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}

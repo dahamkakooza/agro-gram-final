@@ -1,0 +1,257 @@
+.farms-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.farms-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.farms-header h1 {
+  margin: 0;
+  color: #2c5530;
+  font-size: 2rem;
+}
+
+.no-farms-card {
+  text-align: center;
+  padding: 60px 40px;
+  margin: 40px auto;
+  max-width: 500px;
+}
+
+.no-farms-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.no-farms-content h3 {
+  margin: 0;
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.no-farms-content p {
+  margin: 0;
+  color: #888;
+  line-height: 1.5;
+}
+
+.farms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+.farm-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e0e0e0;
+}
+
+.farm-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.farm-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.farm-card__header h3 {
+  margin: 0;
+  color: #2c5530;
+  font-size: 1.3rem;
+  flex: 1;
+  margin-right: 12px;
+}
+
+.farm-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.farm-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.farm-card__info p {
+  margin: 0;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.farm-card__info strong {
+  color: #555;
+  font-weight: 600;
+}
+
+.farm-plots {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.farm-plots h4 {
+  margin: 0 0 12px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.plot-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #f8f8f8;
+  font-size: 0.85rem;
+}
+
+.plot-item:last-child {
+  border-bottom: none;
+}
+
+.crop-badge {
+  padding: 2px 8px;
+  background: #e7f3ff;
+  color: #0066cc;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.more-plots {
+  margin: 8px 0 0 0;
+  color: #888;
+  font-size: 0.8rem;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Productivity Badge */
+.productivity-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.productivity-high {
+  background: #d4edda;
+  color: #155724;
+}
+
+.productivity-medium {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.productivity-low {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Form Styles */
+.farm-form,
+.plot-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Loading State */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.loading p {
+  margin-top: 16px;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .farms-header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .farms-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .farm-card__header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  
+  .farm-actions {
+    justify-content: center;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .farm-card__info p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .farms-page {
+    padding: 16px;
+  }
+  
+  .farm-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .farm-actions button {
+    width: 100%;
+  }
+}

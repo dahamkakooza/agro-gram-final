@@ -1,0 +1,304 @@
+/* ExportClientDashboard.css */
+.export-client-dashboard {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.shipment-status-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.status-metric {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px solid transparent;
+}
+
+.status-metric:hover {
+  border-color: #17a2b8;
+}
+
+.active-shipments {
+  margin-top: 24px;
+}
+
+.shipment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 4px solid #17a2b8;
+}
+
+.shipment-item:hover {
+  background: #e9ecef;
+  transform: translateX(4px);
+}
+
+.shipment-id {
+  font-weight: 700;
+  color: #17a2b8;
+  min-width: 80px;
+}
+
+.shipment-route {
+  flex: 1;
+  margin: 0 16px;
+  font-weight: 500;
+}
+
+.shipment-status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+.shipment-progress {
+  min-width: 100px;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #e9ecef;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #17a2b8, #20c997);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.customs-update {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #ffc107;
+}
+
+.update-type {
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.update-status, .update-date {
+  color: #6c757d;
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+
+.logistics-partners {
+  margin-top: 16px;
+}
+
+.partner-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.partner-name {
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.partner-service {
+  flex: 1;
+  margin: 0 12px;
+  color: #6c757d;
+}
+
+.international-pricing {
+  margin-bottom: 20px;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.commodity {
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.price {
+  font-weight: 700;
+  color: #28a745;
+  margin: 0 12px;
+}
+
+.market {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.demand-metrics {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.demand-metric {
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.demand-metric.high { background: #d4edda; color: #155724; }
+.demand-metric.medium { background: #fff3cd; color: #856404; }
+.demand-metric.low { background: #f8d7da; color: #721c24; }
+
+.trusted-partners {
+  margin-bottom: 20px;
+}
+
+.partner-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.partner-card:hover {
+  border-color: #17a2b8;
+  transform: translateY(-2px);
+}
+
+.partner-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.partner-info {
+  flex: 1;
+}
+
+.partner-info h5 {
+  margin: 0 0 4px 0;
+  font-size: 1.1rem;
+}
+
+.partner-info p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.partner-specialty {
+  font-style: italic;
+}
+
+.partner-rating {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.network-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.network-stat {
+  text-align: center;
+  padding: 16px;
+  background: #e9ecef;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Shipment Modal */
+.shipment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.shipment-details {
+  margin: 20px 0;
+}
+
+.detail-item {
+  margin-bottom: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shipment-status-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .shipment-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .customs-update, .partner-item, .price-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .partner-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .network-stats {
+    grid-template-columns: 1fr;
+  }
+}

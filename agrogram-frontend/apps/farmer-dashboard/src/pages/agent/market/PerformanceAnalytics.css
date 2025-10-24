@@ -1,0 +1,300 @@
+.performance-analytics-page {
+  padding: 20px;
+}
+
+.performance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.key-metrics {
+  grid-column: 1 / -1;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.metric-item {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.metric-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.metric-label {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.metric-trend {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.metric-trend.positive {
+  color: #10b981;
+}
+
+.accuracy-trends {
+  grid-column: 1 / -1;
+}
+
+.accuracy-chart {
+  height: 300px;
+  margin-top: 16px;
+}
+
+.report-performance {
+  grid-column: 1;
+}
+
+.report-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.report-item {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.report-name {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.report-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.client-satisfaction {
+  grid-column: 2;
+}
+
+.satisfaction-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.satisfaction-item {
+  text-align: center;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.metric-label {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.metric-value {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.satisfaction-stars {
+  color: #f59e0b;
+  font-size: 14px;
+}
+
+.feedback-summary {
+  margin-top: 20px;
+}
+
+.feedback-item {
+  padding: 12px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-style: italic;
+  color: #4b5563;
+}
+
+.efficiency-metrics {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.efficiency-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.efficiency-item {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.metric-name {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.metric-value {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #1f2937;
+}
+
+.metric-trend {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.metric-trend.positive {
+  color: #10b981;
+}
+
+.metric-trend.negative {
+  color: #ef4444;
+}
+
+.goal-tracking {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.goal-item {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.goal-name {
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+.goal-deadline {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+.comparative-analysis {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.improvement-areas {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.improvement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.improvement-item {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.area-name {
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+.improvement-details p {
+  margin-bottom: 8px;
+  color: #4b5563;
+}
+
+.action-plan {
+  margin-top: 12px;
+  padding: 12px;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+@media (max-width: 1024px) {
+  .performance-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .key-metrics,
+  .accuracy-trends,
+  .report-performance,
+  .client-satisfaction,
+  .efficiency-metrics,
+  .goal-tracking,
+  .comparative-analysis,
+  .improvement-areas {
+    grid-column: 1;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .satisfaction-metrics,
+  .efficiency-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .report-stats {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

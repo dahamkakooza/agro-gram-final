@@ -1,0 +1,68 @@
+.route-optimizer {
+  padding: 1rem;
+}
+
+.routes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.route-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.route-item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-color: #3b82f6;
+}
+
+.route-icon {
+  font-size: 1.5rem;
+}
+
+.route-details {
+  flex: 1;
+}
+
+.route-name {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.route-stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.efficiency {
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+}
+
+.efficiency.high {
+  background-color: #10b981;
+  color: white;
+}
+
+.efficiency.medium {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.efficiency.low {
+  background-color: #ef4444;
+  color: white;
+}

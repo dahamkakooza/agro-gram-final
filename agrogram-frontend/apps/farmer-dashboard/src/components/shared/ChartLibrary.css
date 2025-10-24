@@ -1,0 +1,68 @@
+/* src/components/shared/ChartLibrary.css */
+.chart-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+}
+
+.chart-container .recharts-responsive-container {
+  border-radius: 4px;
+}
+
+/* Custom tooltip styling */
+.recharts-tooltip-wrapper {
+  z-index: 100;
+}
+
+.custom-tooltip {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.custom-tooltip .label {
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 4px;
+}
+
+.custom-tooltip .value {
+  color: #007bff;
+  font-weight: 500;
+}
+
+/* Legend customization */
+.recharts-legend-wrapper {
+  padding-top: 16px;
+}
+
+.recharts-default-legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.recharts-legend-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .chart-container {
+    padding: 16px;
+  }
+  
+  .recharts-default-legend {
+    gap: 12px;
+    font-size: 12px;
+  }
+}

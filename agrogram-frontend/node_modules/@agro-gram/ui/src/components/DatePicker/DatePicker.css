@@ -1,0 +1,19 @@
+/* packages/ui/src/components/DatePicker/DatePicker.css */
+.date-picker {
+  margin-bottom: 16px;
+}
+
+.date-picker-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.date-picker-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}

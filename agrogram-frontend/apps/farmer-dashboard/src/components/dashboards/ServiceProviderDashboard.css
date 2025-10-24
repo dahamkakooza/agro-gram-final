@@ -1,0 +1,213 @@
+/* ServiceProviderDashboard.css */
+.service-provider-dashboard {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.operations-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.operation-metric {
+  text-align: center;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.booking-time {
+  font-weight: 600;
+  min-width: 80px;
+}
+
+.booking-details {
+  flex: 1;
+  margin: 0 16px;
+}
+
+.booking-details strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.booking-details span {
+  display: block;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.capacity-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.capacity-metric {
+  text-align: center;
+  padding: 12px;
+  background: #e9ecef;
+  border-radius: 6px;
+}
+
+.allocation-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.technician-name {
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.assigned-services, .current-location {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.optimization-stats {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.optimization-stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.history-item, .feedback-item {
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.customer-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.service-type, .service-date, .feedback-comment {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.feedback-rating {
+  color: #ffc107;
+  margin-bottom: 4px;
+}
+
+.profit-metrics {
+  display: grid;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.profit-metric {
+  text-align: center;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.opportunity-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.opportunity-area {
+  font-weight: 600;
+}
+
+.service-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.service-metric {
+  text-align: center;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.performance-trends {
+  margin-top: 20px;
+}
+
+.trend-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+}
+
+.trend-item.positive {
+  background: #d4edda;
+  color: #155724;
+}
+
+.trend-item.negative {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .operations-summary {
+    grid-template-columns: 1fr;
+  }
+  
+  .schedule-item, .allocation-item, .opportunity-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .capacity-metrics {
+    grid-template-columns: 1fr;
+  }
+}

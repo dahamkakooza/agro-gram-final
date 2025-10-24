@@ -1,0 +1,305 @@
+/* FinancialAdvisorDashboard.css */
+.financial-advisor-dashboard {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.portfolio-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.portfolio-metric {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #28a745;
+}
+
+.application-item, .loan-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.applicant-name, .loan-details strong {
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.loan-amount, .application-status {
+  margin: 0 12px;
+}
+
+.loan-details {
+  flex: 1;
+  margin: 0 12px;
+}
+
+.loan-details span {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.loan-status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.loan-status.good { background: #d4edda; color: #155724; }
+.loan-status.warning { background: #fff3cd; color: #856404; }
+.loan-status.critical { background: #f8d7da; color: #721c24; }
+
+.credit-item, .collateral-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.farmer-name, .asset-type {
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.credit-score, .valuation {
+  font-weight: 700;
+  margin: 0 12px;
+}
+
+.risk-level, .coverage {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.risk-level.low { background: #d4edda; color: #155724; }
+.risk-level.medium { background: #fff3cd; color: #856404; }
+.risk-level.high { background: #f8d7da; color: #721c24; }
+
+.success-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.farmer-name {
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.success-metrics {
+  flex: 1;
+  margin: 0 12px;
+}
+
+.success-metrics span {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.9rem;
+}
+
+.impact-score {
+  font-weight: 700;
+  color: #28a745;
+}
+
+.impact-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.impact-metric {
+  text-align: center;
+  padding: 16px;
+  background: #e9ecef;
+  border-radius: 8px;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.product-name {
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.product-stats {
+  flex: 1;
+  margin: 0 12px;
+}
+
+.product-stats span {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.product-rating {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.tool-buttons {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio-summary {
+    grid-template-columns: 1fr;
+  }
+  
+  .application-item, .loan-item, .credit-item, 
+  .collateral-item, .success-item, .product-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .impact-metrics {
+    grid-template-columns: 1fr;
+  }
+  
+  .tool-buttons {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Add to both dashboard CSS files */
+.dashboard-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-header h3 {
+  margin: 0;
+  color: #2c5530;
+  font-size: 1.3rem;
+}
+
+.ecosystem-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.ecosystem-card:hover {
+  border-color: #28a745;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.15);
+}
+
+.network-preview {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.network-preview p {
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+.quick-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.quick-stats span {
+  background: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #495057;
+  border: 1px solid #dee2e6;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 20px;
+}
+
+.modal-content.large {
+  max-width: 1200px;
+  width: 95%;
+  max-height: 90vh;
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.close-modal:hover {
+  background: #5a6268;
+}

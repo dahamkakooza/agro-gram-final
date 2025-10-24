@@ -1,0 +1,306 @@
+/* CommercialFarmerDashboard.css */
+.commercial-farmer-dashboard {
+  padding: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.enterprise-header {
+  background: linear-gradient(135deg, #fd7e14, #e44d26);
+  color: white;
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.header-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.farm-selector {
+  padding: 8px 16px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 6px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 0.9rem;
+}
+
+.farm-selector option {
+  color: #333;
+}
+
+.enterprise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.operations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.operation-metric {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.operation-metric:hover {
+  border-color: #fd7e14;
+  transform: translateY(-2px);
+}
+
+.supply-chain-visual {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.chain-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f8f9fa;
+  min-width: 100px;
+  text-align: center;
+}
+
+.stage-icon {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.stage-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.stage-status {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.stage-status.active {
+  background: #d4edda;
+  color: #155724;
+}
+
+.stage-status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.stage-status.upcoming {
+  background: #cce7ff;
+  color: #004085;
+}
+
+.chain-arrow {
+  font-size: 1.2rem;
+  color: #6c757d;
+  padding: 0 12px;
+}
+
+.profit-metrics {
+  display: grid;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.profit-metric {
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+}
+
+.metric-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #495057;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.metric-change {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.metric-change.positive { color: #28a745; }
+.metric-change.negative { color: #dc3545; }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .enterprise-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .operations-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .supply-chain-visual {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .chain-arrow {
+    transform: rotate(90deg);
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .enterprise-header {
+    text-align: center;
+  }
+  
+  .header-controls {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .farm-selector, .header-controls button {
+    width: 100%;
+  }
+  
+  .card-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .card-actions button {
+    width: 100%;
+  }
+}
+
+/* Add to both dashboard CSS files */
+.dashboard-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-header h3 {
+  margin: 0;
+  color: #2c5530;
+  font-size: 1.3rem;
+}
+
+.ecosystem-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.ecosystem-card:hover {
+  border-color: #28a745;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.15);
+}
+
+.network-preview {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.network-preview p {
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+.quick-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.quick-stats span {
+  background: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #495057;
+  border: 1px solid #dee2e6;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 20px;
+}
+
+.modal-content.large {
+  max-width: 1200px;
+  width: 95%;
+  max-height: 90vh;
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.close-modal:hover {
+  background: #5a6268;
+}

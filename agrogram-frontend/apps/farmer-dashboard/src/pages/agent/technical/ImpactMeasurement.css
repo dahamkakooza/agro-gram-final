@@ -1,0 +1,245 @@
+.impact-measurement-page {
+  padding: 20px;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.yield-improvement {
+  grid-column: 1;
+}
+
+.improvement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.improvement-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.farmer-info {
+  flex: 1;
+}
+
+.farmer-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.crop-type {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.improvement-metric {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 20px;
+}
+
+.before {
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.after {
+  color: #10b981;
+  font-weight: 500;
+}
+
+.arrow {
+  color: #6b7280;
+}
+
+.improvement-percent {
+  font-weight: bold;
+  min-width: 80px;
+  text-align: right;
+}
+
+.improvement-percent.positive {
+  color: #10b981;
+}
+
+.cost-reduction {
+  grid-column: 2;
+}
+
+.cost-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.cost-metric {
+  text-align: center;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.metric-value {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #1f2937;
+}
+
+.metric-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.savings-breakdown {
+  margin-top: 20px;
+}
+
+.savings-breakdown h4 {
+  margin-bottom: 16px;
+}
+
+.advisory-performance {
+  grid-column: 1;
+}
+
+.performance-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.performance-trends {
+  margin-top: 20px;
+}
+
+.trend-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.trend-item.positive {
+  color: #10b981;
+}
+
+.trend-item.negative {
+  color: #ef4444;
+}
+
+.sustainability-impact {
+  grid-column: 2;
+}
+
+.sustainability-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.sustainability-metric {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.metric-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.case-resolution {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.resolution-chart {
+  height: 300px;
+  margin-top: 16px;
+}
+
+.farmer-feedback {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.feedback-item {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.feedback-content {
+  font-style: italic;
+  margin-bottom: 12px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.feedback-author {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.feedback-rating {
+  color: #f59e0b;
+}
+
+@media (max-width: 1024px) {
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .yield-improvement,
+  .cost-reduction,
+  .advisory-performance,
+  .sustainability-impact,
+  .case-resolution,
+  .farmer-feedback {
+    grid-column: 1;
+  }
+  
+  .cost-metrics,
+  .performance-metrics,
+  .sustainability-metrics {
+    grid-template-columns: 1fr;
+  }
+  
+  .improvement-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .improvement-metric {
+    margin: 0;
+  }
+}

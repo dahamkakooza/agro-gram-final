@@ -1,0 +1,237 @@
+/* MarketAnalystDashboard.css */
+.market-analyst-dashboard {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.commodity-selector {
+  margin: 20px 0;
+}
+
+.commodity-filter {
+  padding: 8px 16px;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  background: white;
+  font-size: 0.9rem;
+  width: 200px;
+}
+
+.market-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.market-metric {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #17a2b8;
+}
+
+.forecasting-models {
+  margin-top: 20px;
+}
+
+.model-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.model-name {
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.model-accuracy, .model-confidence {
+  color: #6c757d;
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+
+.analysis-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.commodity-name {
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.supply-demand-metrics {
+  flex: 1;
+  margin: 0 12px;
+}
+
+.supply-demand-metrics span {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.balance {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.balance.balanced { background: #d4edda; color: #155724; }
+.balance.surplus { background: #cce7ff; color: #004085; }
+.balance.shortage { background: #f8d7da; color: #721c24; }
+
+.competitor-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.competitor-name {
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.market-share, .pricing-strategy {
+  color: #6c757d;
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+
+.report-item, .forecast-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.report-name, .forecast-season {
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.report-frequency, .forecast-outlook, .report-status, .forecast-confidence {
+  color: #6c757d;
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+
+.threshold-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.commodity {
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.threshold-type, .threshold-value {
+  color: #6c757d;
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+
+.threshold-status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.threshold-status.breached { background: #f8d7da; color: #721c24; }
+.threshold-status.normal { background: #d4edda; color: #155724; }
+
+.notification-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #ffc107;
+}
+
+.notification-type {
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.notification-severity {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0 8px;
+}
+
+.notification-severity.high { background: #f8d7da; color: #721c24; }
+.notification-severity.medium { background: #fff3cd; color: #856404; }
+.notification-severity.low { background: #d1ecf1; color: #0c5460; }
+
+.notification-message {
+  flex: 1;
+  margin: 0 12px;
+  font-size: 0.9rem;
+}
+
+.trend-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.trend-metric {
+  text-align: center;
+  padding: 16px;
+  background: #e9ecef;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .market-summary {
+    grid-template-columns: 1fr;
+  }
+  
+  .model-item, .analysis-item, .competitor-item, 
+  .report-item, .forecast-item, .threshold-item, 
+  .notification-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .trend-metrics {
+    grid-template-columns: 1fr;
+  }
+}

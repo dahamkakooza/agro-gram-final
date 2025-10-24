@@ -1,0 +1,162 @@
+.dashboard {
+  padding: 0;
+}
+
+.dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard__header h1 {
+  color: var(--neutral-800);
+  font-size: 2rem;
+}
+
+.dashboard__actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.dashboard__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.stat-card__content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stat-card__icon {
+  font-size: 2rem;
+}
+
+.stat-card__info h3 {
+  font-size: 1.5rem;
+  color: var(--neutral-800);
+  margin-bottom: 0.25rem;
+}
+
+.stat-card__info p {
+  color: var(--neutral-600);
+  font-size: 0.875rem;
+}
+
+.dashboard__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.farms-overview .farms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.farm-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--neutral-200);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.farm-item:hover {
+  border-color: var(--primary-300);
+  background-color: var(--primary-50);
+}
+
+.farm-item__info h4 {
+  color: var(--neutral-800);
+  margin-bottom: 0.25rem;
+}
+
+.farm-item__info p {
+  color: var(--neutral-600);
+  font-size: 0.875rem;
+}
+
+.farm-item__stats {
+  color: var(--neutral-500);
+  font-size: 0.875rem;
+}
+
+.no-farms {
+  text-align: center;
+  padding: 2rem;
+  color: var(--neutral-600);
+}
+
+.no-farms p {
+  margin-bottom: 1rem;
+}
+
+.farms-overview__footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--neutral-200);
+  text-align: center;
+}
+
+.quick-actions .actions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.action-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+  height: auto;
+}
+
+.action-icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard__header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .dashboard__actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .dashboard__grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .actions-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .farm-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

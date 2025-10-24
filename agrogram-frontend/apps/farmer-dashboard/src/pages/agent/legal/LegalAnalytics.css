@@ -1,0 +1,305 @@
+.legal-analytics-page {
+  padding: 20px;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.case-metrics {
+  grid-column: 1 / -1;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.metric-item {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.metric-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.metric-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.case-types {
+  grid-column: 1;
+}
+
+.case-type-chart {
+  height: 300px;
+  margin-top: 16px;
+}
+
+.case-trends {
+  grid-column: 2;
+}
+
+.trends-chart {
+  height: 300px;
+  margin-top: 16px;
+}
+
+.revenue-analytics {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.revenue-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.revenue-item {
+  text-align: center;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.revenue-label {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.revenue-value {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #1f2937;
+}
+
+.revenue-change {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.revenue-change.positive {
+  color: #10b981;
+}
+
+.revenue-chart {
+  height: 200px;
+  margin-top: 16px;
+}
+
+.client-analytics {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.efficiency-metrics {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.efficiency-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.efficiency-item {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.metric-name {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.metric-value {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #1f2937;
+}
+
+.metric-trend {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.metric-trend.positive {
+  color: #10b981;
+}
+
+.metric-trend.negative {
+  color: #ef4444;
+}
+
+.practice-areas {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.practice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.practice-item {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.area-name {
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+.area-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.area-stats span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.risk-analytics {
+  grid-column: 1 / -1;
+  grid-row: 5;
+}
+
+.risk-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.risk-item {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.risk-item.low {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.risk-item.medium {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+}
+
+.risk-item.high {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.risk-label {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.risk-value {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.risk-item.low .risk-value {
+  color: #10b981;
+}
+
+.risk-item.medium .risk-value {
+  color: #f59e0b;
+}
+
+.risk-item.high .risk-value {
+  color: #ef4444;
+}
+
+.risk-alerts {
+  margin-top: 20px;
+}
+
+.alert-item {
+  padding: 16px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+}
+
+.alert-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #dc2626;
+}
+
+.alert-description {
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .case-metrics,
+  .case-types,
+  .case-trends,
+  .revenue-analytics,
+  .client-analytics,
+  .efficiency-metrics,
+  .practice-areas,
+  .risk-analytics {
+    grid-column: 1;
+  }
+  
+  .metrics-grid,
+  .revenue-metrics,
+  .risk-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .efficiency-grid,
+  .practice-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .metrics-grid,
+  .revenue-metrics,
+  .risk-metrics {
+    grid-template-columns: 1fr;
+  }
+}

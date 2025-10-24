@@ -1,0 +1,81 @@
+.portfolio-manager {
+  padding: 1rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.client-card {
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.client-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.client-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.risk-level {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.risk-level.low {
+  background-color: #10b981;
+  color: white;
+}
+
+.risk-level.medium {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.risk-level.high {
+  background-color: #ef4444;
+  color: white;
+}
+
+.portfolio-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.return {
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.return.positive {
+  background-color: #10b981;
+  color: white;
+}
+
+.return.negative {
+  background-color: #ef4444;
+  color: white;
+}

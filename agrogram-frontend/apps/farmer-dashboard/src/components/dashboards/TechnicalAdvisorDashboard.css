@@ -1,0 +1,182 @@
+/* TechnicalAdvisorDashboard.css */
+.technical-advisor-dashboard {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.case-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.case-metric {
+  text-align: center;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #17a2b8;
+}
+
+.diagnosis-tools {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.visit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.visit-date {
+  font-weight: 600;
+  min-width: 80px;
+}
+
+.visit-farmer {
+  flex: 1;
+  margin: 0 12px;
+  font-weight: 500;
+}
+
+.visit-purpose {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.recent-solutions, .best-practices {
+  margin: 20px 0;
+}
+
+.solution-item, .practice-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.solution-title, .practice-name {
+  font-weight: 600;
+  flex: 1;
+}
+
+.solution-category, .solution-effectiveness, .practice-adoption {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin: 0 12px;
+}
+
+.improvement-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.farmer-name {
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.crop-type {
+  color: #6c757d;
+  margin: 0 12px;
+}
+
+.improvement-metric {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 12px;
+}
+
+.before, .after {
+  font-weight: 600;
+}
+
+.arrow {
+  color: #6c757d;
+}
+
+.improvement-percent {
+  font-weight: 700;
+  color: #28a745;
+}
+
+.cost-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.research-item, .material-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.research-title, .material-title {
+  font-weight: 600;
+  flex: 1;
+}
+
+.research-source, .material-type, .research-date, .material-duration {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin: 0 8px;
+}
+
+.performance-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.performance-metric {
+  text-align: center;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .case-summary {
+    grid-template-columns: 1fr;
+  }
+  
+  .visit-item, .solution-item, .practice-item, 
+  .improvement-item, .research-item, .material-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .improvement-metric {
+    margin: 8px 0;
+  }
+  
+  .cost-metrics, .performance-metrics {
+    grid-template-columns: 1fr;
+  }
+}

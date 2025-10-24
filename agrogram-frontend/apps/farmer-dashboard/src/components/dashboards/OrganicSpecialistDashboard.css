@@ -1,0 +1,272 @@
+/* OrganicSpecialistDashboard.css */
+.organic-specialist-dashboard {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certification-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.certification-list {
+  display: grid;
+  gap: 12px;
+}
+
+.certification-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 4px solid #28a745;
+}
+
+.certification-item:hover {
+  background: #e9ecef;
+  transform: translateX(4px);
+}
+
+.certification-item.active {
+  border-left-color: #28a745;
+  background: #d4edda;
+}
+
+.certification-item.expired {
+  border-left-color: #dc3545;
+  background: #f8d7da;
+}
+
+.cert-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  text-align: center;
+}
+
+.cert-info h4 {
+  margin: 0 0 4px 0;
+  font-size: 1.1rem;
+}
+
+.cert-info p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.cert-status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.cert-status.active {
+  background: #d4edda;
+  color: #155724;
+}
+
+.cert-status.expired {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.cert-status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.quality-metrics {
+  display: grid;
+  gap: 16px;
+}
+
+.quality-metric {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.quality-metric:hover {
+  border-color: #28a745;
+  transform: translateY(-2px);
+}
+
+.metric-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #495057;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.metric-value.excellent { color: #28a745; }
+.metric-value.good { color: #20c997; }
+
+.metric-details {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.premium-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.premium-stat {
+  text-align: center;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #28a745;
+}
+
+.stat-label {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.buyer-list {
+  margin-top: 16px;
+}
+
+.buyer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.audit-status {
+  margin-top: 20px;
+  padding: 16px;
+  background: #e9ecef;
+  border-radius: 8px;
+}
+
+.audit-info {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.audit-preparedness {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.preparedness-bar {
+  flex: 1;
+  height: 8px;
+  background: #dee2e6;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.preparedness-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #28a745, #20c997);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.community-events {
+  margin-bottom: 20px;
+}
+
+.event-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.event-date {
+  font-weight: 600;
+  min-width: 80px;
+}
+
+.event-title {
+  flex: 1;
+  margin: 0 12px;
+}
+
+.network-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.network-stat {
+  text-align: center;
+  padding: 16px;
+  background: #e9ecef;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .certification-badges {
+    justify-content: center;
+  }
+  
+  .certification-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  
+  .premium-stats, .network-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .event-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .buyer-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .audit-preparedness {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .preparedness-bar {
+    width: 100%;
+  }
+}
