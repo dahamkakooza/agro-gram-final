@@ -1,0 +1,261 @@
+/* src/components/ui/MarketPriceTicker.css */
+.market-price-ticker {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 8px;
+  position: relative;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.market-price-ticker.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.ticker-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.ticker-container::-webkit-scrollbar {
+  display: none;
+}
+
+.ticker-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0 16px;
+  animation: scroll 60s linear infinite;
+  min-width: max-content;
+}
+
+.ticker-content.paused {
+  animation-play-state: paused;
+}
+
+.price-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 12px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  min-width: max-content;
+  white-space: nowrap;
+}
+
+.price-item.clickable {
+  cursor: pointer;
+}
+
+.price-item.clickable:hover {
+  background: #007bff;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+.price-item.clickable:hover .crop-name,
+.price-item.clickable:hover .price-value,
+.price-item.clickable:hover .volume {
+  color: white;
+}
+
+.crop-name {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.9rem;
+  min-width: 80px;
+}
+
+.price-value {
+  font-weight: 700;
+  color: #28a745;
+  font-size: 0.9rem;
+  min-width: 70px;
+}
+
+.price-trend {
+  font-weight: 600;
+  font-size: 0.85rem;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.volume {
+  font-size: 0.8rem;
+  color: #6c757d;
+  min-width: 60px;
+}
+
+/* Ticker controls */
+.ticker-controls {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4px 8px;
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+}
+
+.control-btn {
+  background: none;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.ticker-status {
+  font-size: 0.7rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+/* Animation for scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .market-price-ticker {
+    padding: 6px;
+  }
+  
+  .ticker-content {
+    gap: 16px;
+    padding: 0 12px;
+  }
+  
+  .price-item {
+    gap: 8px;
+    padding: 4px 8px;
+  }
+  
+  .crop-name {
+    font-size: 0.8rem;
+    min-width: 60px;
+  }
+  
+  .price-value {
+    font-size: 0.8rem;
+    min-width: 60px;
+  }
+  
+  .volume {
+    display: none; /* Hide volume on mobile to save space */
+  }
+  
+  .ticker-controls {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    justify-content: center;
+    margin-top: 8px;
+    background: transparent;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .market-price-ticker {
+    border: 2px solid #000;
+    background: #fff;
+  }
+  
+  .price-item {
+    border: 1px solid #000;
+    background: #fff;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .ticker-content {
+    animation: none;
+  }
+  
+  .ticker-container {
+    overflow-x: auto;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .market-price-ticker {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    border-color: #4a5568;
+    color: #e2e8f0;
+  }
+  
+  .market-price-ticker.empty {
+    background: #2d3748;
+    color: #a0aec0;
+  }
+  
+  .price-item {
+    background: #1a202c;
+    border-color: #4a5568;
+    color: #e2e8f0;
+  }
+  
+  .crop-name {
+    color: #e2e8f0;
+  }
+  
+  .price-value {
+    color: #68d391; /* Green for dark mode */
+  }
+  
+  .volume {
+    color: #a0aec0;
+  }
+  
+  .ticker-controls {
+    background: rgba(26, 32, 44, 0.9);
+  }
+  
+  .control-btn {
+    border-color: #4a5568;
+    color: #e2e8f0;
+  }
+  
+  .ticker-status {
+    color: #a0aec0;
+  }
+}

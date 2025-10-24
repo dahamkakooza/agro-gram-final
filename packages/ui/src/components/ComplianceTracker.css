@@ -1,0 +1,262 @@
+.compliance-tracker {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.compliance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 16px;
+}
+
+.compliance-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.compliance-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  border: 1px solid #d0d0d0;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.filter-btn.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.compliance-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.compliance-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fafafa;
+  transition: all 0.2s ease;
+  gap: 16px;
+}
+
+.compliance-item:hover {
+  border-color: #007bff;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+  background: white;
+}
+
+.regulation-info {
+  flex: 1;
+}
+
+.regulation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  gap: 12px;
+}
+
+.regulation-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.regulation-status {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid currentColor;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.regulation-description {
+  margin: 0 0 12px 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.regulation-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.detail {
+  font-size: 12px;
+  color: #6c757d;
+  background: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.regulation-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 150px;
+  flex-shrink: 0;
+}
+
+.status-select {
+  padding: 6px 8px;
+  border: 2px solid #d0d0d0;
+  border-radius: 4px;
+  background: white;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  border: 1px solid #d0d0d0;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.action-btn.view {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.action-btn.view:hover {
+  background: #007bff;
+  color: white;
+}
+
+.action-btn.documents {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.action-btn.documents:hover {
+  background: #6c757d;
+  color: white;
+}
+
+.compliance-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6c757d;
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+  opacity: 0.5;
+}
+
+.compliance-empty h4 {
+  margin: 0 0 8px 0;
+  color: #495057;
+}
+
+.compliance-empty p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .compliance-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .compliance-filters {
+    justify-content: center;
+  }
+  
+  .compliance-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .regulation-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .regulation-actions {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: auto;
+  }
+  
+  .action-buttons {
+    flex-direction: row;
+    gap: 8px;
+  }
+  
+  .regulation-details {
+    justify-content: flex-start;
+  }
+}
+
+/* Status-specific styling */
+.compliance-item[data-status="compliant"] {
+  border-left: 4px solid #28a745;
+}
+
+.compliance-item[data-status="pending"] {
+  border-left: 4px solid #ffc107;
+}
+
+.compliance-item[data-status="non-compliant"] {
+  border-left: 4px solid #dc3545;
+}
+
+.compliance-item[data-status="expired"] {
+  border-left: 4px solid #6c757d;
+}

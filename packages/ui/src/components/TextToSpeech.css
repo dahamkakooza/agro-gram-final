@@ -1,0 +1,55 @@
+.text-to-speech {
+  display: inline-block;
+}
+
+.speak-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.speak-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.speak-btn.speaking {
+  background: #6c757d;
+  animation: pulse-blue 1.5s infinite;
+}
+
+.speak-btn.speaking:hover {
+  background: #5a6268;
+}
+
+@keyframes pulse-blue {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .speak-btn {
+    transition: none;
+    transform: none;
+  }
+  
+  .speak-btn.speaking {
+    animation: none;
+  }
+}

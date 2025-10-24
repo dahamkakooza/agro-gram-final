@@ -1,0 +1,140 @@
+/* src/components/ui/Chart.css */
+.chart-container {
+  position: relative;
+  background: var(--chart-bg, #ffffff);
+  border: 1px solid var(--chart-border, #e0e0e0);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.chart-container:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.chart-container.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background: var(--chart-bg-empty, #f8f9fa);
+  border: 2px dashed var(--chart-border-empty, #dee2e6);
+}
+
+.chart-placeholder {
+  text-align: center;
+  color: var(--chart-text-secondary, #6c757d);
+}
+
+.placeholder-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.placeholder-text {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.chart-canvas {
+  display: block;
+  cursor: crosshair;
+}
+
+.chart-tooltip {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  pointer-events: none;
+  z-index: 1000;
+  transform: translateY(-100%);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tooltip-content {
+  white-space: nowrap;
+}
+
+.tooltip-content strong {
+  color: #fff;
+}
+
+/* Theme variants */
+.chart-container.theme-dark {
+  --chart-bg: #1a1a1a;
+  --chart-border: #333;
+  --chart-bg-empty: #2d2d2d;
+  --chart-border-empty: #444;
+  --chart-text-secondary: #aaa;
+}
+
+.chart-container.theme-light {
+  --chart-bg: #ffffff;
+  --chart-border: #e0e0e0;
+  --chart-bg-empty: #f8f9fa;
+  --chart-border-empty: #dee2e6;
+  --chart-text-secondary: #6c757d;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .chart-container {
+    padding: 12px;
+    border-radius: 6px;
+  }
+  
+  .chart-placeholder {
+    font-size: 0.8rem;
+  }
+  
+  .placeholder-icon {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animation for chart loading */
+@keyframes chartFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chart-container {
+  animation: chartFadeIn 0.5s ease-out;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .chart-container {
+    border: 2px solid #000;
+  }
+  
+  .chart-tooltip {
+    border: 2px solid #000;
+    background: #fff;
+    color: #000;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .chart-container {
+    animation: none;
+    transition: none;
+  }
+  
+  .chart-container:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}

@@ -1,0 +1,102 @@
+.user-management {
+  padding: 1rem;
+}
+
+.users-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.user-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.user-email {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.user-role {
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.user-status {
+  min-width: 80px;
+}
+
+.status {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status.active {
+  background: #10b981;
+  color: white;
+}
+
+.status.inactive {
+  background: #6b7280;
+  color: white;
+}
+
+.status.suspended {
+  background: #ef4444;
+  color: white;
+}
+
+.user-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.action-btn.edit {
+  background: #3b82f6;
+  color: white;
+}
+
+.action-btn.edit:hover {
+  background: #2563eb;
+}
+
+.action-btn.delete {
+  background: #ef4444;
+  color: white;
+}
+
+.action-btn.delete:hover {
+  background: #dc2626;
+}

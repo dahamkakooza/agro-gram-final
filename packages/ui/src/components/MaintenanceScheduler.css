@@ -1,0 +1,87 @@
+.maintenance-scheduler {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.maintenance-scheduler h3 {
+  margin: 0 0 16px 0;
+  color: #333;
+}
+
+.schedule-maintenance {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.date-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.schedule-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.schedule-btn:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.schedule-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.upcoming-maintenance h4 {
+  margin: 0 0 12px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.maintenance-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.maintenance-item:last-child {
+  border-bottom: none;
+}
+
+.maintenance-info {
+  flex: 1;
+}
+
+.equipment-name {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.maintenance-type {
+  display: block;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.maintenance-date {
+  font-size: 12px;
+  color: #6c757d;
+  white-space: nowrap;
+}

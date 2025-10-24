@@ -1,0 +1,92 @@
+.pos-integration {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.pos-integration h4 {
+  margin: 0 0 16px 0;
+  color: #333;
+}
+
+.pos-systems {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.pos-system {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pos-system:hover {
+  border-color: #007bff;
+  background: #f8f9fa;
+}
+
+.pos-system.selected {
+  border-color: #007bff;
+  background: #e3f2fd;
+}
+
+.system-icon {
+  font-size: 24px;
+  width: 40px;
+  text-align: center;
+}
+
+.system-info {
+  flex: 1;
+}
+
+.system-name {
+  display: block;
+  font-weight: 600;
+  color: #333;
+}
+
+.system-status {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.sync-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.sync-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sync-btn:hover:not(:disabled) {
+  background: #218838;
+}
+
+.sync-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.last-sync {
+  font-size: 12px;
+  color: #6c757d;
+}
