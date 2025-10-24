@@ -1,0 +1,114 @@
+INFO 2025-10-23 16:04:38,077 price_predictor 7540 20836 Training realistic price prediction model...
+WARNING 2025-10-23 16:04:48,324 price_predictor 7540 20836 FAO API Error: HTTPConnectionPool(host='fenixservices.fao.org', port=80): Read timed out. (read timeout=10)
+WARNING 2025-10-23 16:04:48,324 price_predictor 7540 20836 No FAO data retrieved, using fallback
+INFO 2025-10-23 16:04:48,324 price_predictor 7540 20836 Using realistic synthetic data
+INFO 2025-10-23 16:04:49,734 price_predictor 7540 20836 Realistic model trained - Train MAE: $0.027/kg, Test MAE: $0.041/kg
+INFO 2025-10-23 16:04:49,757 price_predictor 7540 20836 Realistic model saved with features: ['month', 'year', 'day_of_year', 'is_high_season', 'is_low_season', 'crop_Maize', 'crop_Rice', 'crop_Beans', 'crop_Cassava', 'crop_Wheat', 'crop_Tomatoes', 'crop_Potatoes']
+INFO 2025-10-23 16:04:49,757 price_predictor 7540 20836 Realistic price model trained successfully
+INFO 2025-10-23 16:04:49,897 crop_recommender 7540 20836 Gemini API Key configured: True
+INFO 2025-10-23 16:04:49,897 crop_recommender 7540 20836 Gemini AI configured successfully with model: gemini-pro
+INFO 2025-10-23 16:04:50,056 crop_recommender 7540 20836 Crop recommendation model loaded successfully
+INFO 2025-10-23 16:04:50,056 price_predictor 7540 20836 Training realistic price prediction model...
+WARNING 2025-10-23 16:05:00,136 price_predictor 7540 20836 FAO API Error: HTTPConnectionPool(host='fenixservices.fao.org', port=80): Read timed out. (read timeout=10)
+WARNING 2025-10-23 16:05:00,136 price_predictor 7540 20836 No FAO data retrieved, using fallback
+INFO 2025-10-23 16:05:00,136 price_predictor 7540 20836 Using realistic synthetic data
+INFO 2025-10-23 16:05:00,651 price_predictor 7540 20836 Realistic model trained - Train MAE: $0.027/kg, Test MAE: $0.041/kg
+INFO 2025-10-23 16:05:00,671 price_predictor 7540 20836 Realistic model saved with features: ['month', 'year', 'day_of_year', 'is_high_season', 'is_low_season', 'crop_Maize', 'crop_Rice', 'crop_Beans', 'crop_Cassava', 'crop_Wheat', 'crop_Tomatoes', 'crop_Potatoes']
+INFO 2025-10-23 16:05:00,671 price_predictor 7540 20836 Realistic price model trained successfully
+INFO 2025-10-23 16:05:00,676 gemini_client 7540 20836 Gemini AI REST client initialized successfully
+INFO 2025-10-23 16:05:00,676 direct_gemini_client 7540 20836 Direct Gemini AI client initialized
+INFO 2025-10-23 16:18:06,224 price_predictor 13572 12744 Training realistic price prediction model...
+WARNING 2025-10-23 16:18:15,688 price_predictor 13572 12744 FAO API Error: Expecting value: line 1 column 1 (char 0)
+WARNING 2025-10-23 16:18:15,688 price_predictor 13572 12744 No FAO data retrieved, using fallback
+INFO 2025-10-23 16:18:15,688 price_predictor 13572 12744 Using realistic synthetic data
+INFO 2025-10-23 16:18:16,895 price_predictor 13572 12744 Realistic model trained - Train MAE: $0.027/kg, Test MAE: $0.041/kg
+INFO 2025-10-23 16:18:16,910 price_predictor 13572 12744 Realistic model saved with features: ['month', 'year', 'day_of_year', 'is_high_season', 'is_low_season', 'crop_Maize', 'crop_Rice', 'crop_Beans', 'crop_Cassava', 'crop_Wheat', 'crop_Tomatoes', 'crop_Potatoes']
+INFO 2025-10-23 16:18:16,910 price_predictor 13572 12744 Realistic price model trained successfully
+INFO 2025-10-23 16:18:16,973 crop_recommender 13572 12744 Gemini API Key configured: True
+INFO 2025-10-23 16:18:16,973 crop_recommender 13572 12744 Gemini AI configured successfully with model: gemini-pro
+INFO 2025-10-23 16:18:17,098 crop_recommender 13572 12744 Crop recommendation model loaded successfully
+INFO 2025-10-23 16:18:17,098 price_predictor 13572 12744 Training realistic price prediction model...
+WARNING 2025-10-23 16:18:26,491 price_predictor 13572 12744 FAO API Error: Expecting value: line 1 column 1 (char 0)
+WARNING 2025-10-23 16:18:26,491 price_predictor 13572 12744 No FAO data retrieved, using fallback
+INFO 2025-10-23 16:18:26,491 price_predictor 13572 12744 Using realistic synthetic data
+INFO 2025-10-23 16:18:26,834 price_predictor 13572 12744 Realistic model trained - Train MAE: $0.027/kg, Test MAE: $0.041/kg
+INFO 2025-10-23 16:18:26,850 price_predictor 13572 12744 Realistic model saved with features: ['month', 'year', 'day_of_year', 'is_high_season', 'is_low_season', 'crop_Maize', 'crop_Rice', 'crop_Beans', 'crop_Cassava', 'crop_Wheat', 'crop_Tomatoes', 'crop_Potatoes']
+INFO 2025-10-23 16:18:26,850 price_predictor 13572 12744 Realistic price model trained successfully
+INFO 2025-10-23 16:18:26,850 gemini_client 13572 12744 Gemini AI REST client initialized successfully
+INFO 2025-10-23 16:18:26,850 direct_gemini_client 13572 12744 Direct Gemini AI client initialized
+INFO 2025-10-23 16:20:22,740 price_predictor 1880 13804 Training realistic price prediction model...
+WARNING 2025-10-23 16:20:32,825 price_predictor 1880 13804 FAO API Error: HTTPConnectionPool(host='fenixservices.fao.org', port=80): Read timed out. (read timeout=10)
+WARNING 2025-10-23 16:20:32,825 price_predictor 1880 13804 No FAO data retrieved, using fallback
+INFO 2025-10-23 16:20:32,825 price_predictor 1880 13804 Using realistic synthetic data
+INFO 2025-10-23 16:20:34,199 price_predictor 1880 13804 Realistic model trained - Train MAE: $0.027/kg, Test MAE: $0.041/kg
+INFO 2025-10-23 16:20:34,214 price_predictor 1880 13804 Realistic model saved with features: ['month', 'year', 'day_of_year', 'is_high_season', 'is_low_season', 'crop_Maize', 'crop_Rice', 'crop_Beans', 'crop_Cassava', 'crop_Wheat', 'crop_Tomatoes', 'crop_Potatoes']
+INFO 2025-10-23 16:20:34,214 price_predictor 1880 13804 Realistic price model trained successfully
+INFO 2025-10-23 16:20:34,290 crop_recommender 1880 13804 Gemini API Key configured: True
+INFO 2025-10-23 16:20:34,290 crop_recommender 1880 13804 Gemini AI configured successfully with model: gemini-pro
+INFO 2025-10-23 16:20:34,399 crop_recommender 1880 13804 Crop recommendation model loaded successfully
+INFO 2025-10-23 16:20:34,400 price_predictor 1880 13804 Training realistic price prediction model...
+WARNING 2025-10-23 16:20:43,762 price_predictor 1880 13804 FAO API Error: Expecting value: line 1 column 1 (char 0)
+WARNING 2025-10-23 16:20:43,762 price_predictor 1880 13804 No FAO data retrieved, using fallback
+INFO 2025-10-23 16:20:43,762 price_predictor 1880 13804 Using realistic synthetic data
+INFO 2025-10-23 16:20:44,090 price_predictor 1880 13804 Realistic model trained - Train MAE: $0.027/kg, Test MAE: $0.041/kg
+INFO 2025-10-23 16:20:44,106 price_predictor 1880 13804 Realistic model saved with features: ['month', 'year', 'day_of_year', 'is_high_season', 'is_low_season', 'crop_Maize', 'crop_Rice', 'crop_Beans', 'crop_Cassava', 'crop_Wheat', 'crop_Tomatoes', 'crop_Potatoes']
+INFO 2025-10-23 16:20:44,106 price_predictor 1880 13804 Realistic price model trained successfully
+INFO 2025-10-23 16:20:44,106 gemini_client 1880 13804 Gemini AI REST client initialized successfully
+INFO 2025-10-23 16:20:44,106 direct_gemini_client 1880 13804 Direct Gemini AI client initialized
+INFO 2025-10-23 16:31:39,283 price_predictor 164 8984 Training realistic price prediction model...
+WARNING 2025-10-23 16:31:49,644 price_predictor 164 8984 FAO API Error: HTTPConnectionPool(host='fenixservices.fao.org', port=80): Read timed out. (read timeout=10)
+WARNING 2025-10-23 16:31:49,644 price_predictor 164 8984 No FAO data retrieved, using fallback
+INFO 2025-10-23 16:31:49,645 price_predictor 164 8984 Using realistic synthetic data
+INFO 2025-10-23 16:31:50,854 price_predictor 164 8984 Realistic model trained - Train MAE: $0.027/kg, Test MAE: $0.041/kg
+INFO 2025-10-23 16:31:50,868 price_predictor 164 8984 Realistic model saved with features: ['month', 'year', 'day_of_year', 'is_high_season', 'is_low_season', 'crop_Maize', 'crop_Rice', 'crop_Beans', 'crop_Cassava', 'crop_Wheat', 'crop_Tomatoes', 'crop_Potatoes']
+INFO 2025-10-23 16:31:50,868 price_predictor 164 8984 Realistic price model trained successfully
+INFO 2025-10-23 16:31:50,949 crop_recommender 164 8984 Gemini API Key configured: True
+INFO 2025-10-23 16:31:50,949 crop_recommender 164 8984 Gemini AI configured successfully with model: gemini-pro
+INFO 2025-10-23 16:31:51,057 crop_recommender 164 8984 Crop recommendation model loaded successfully
+INFO 2025-10-23 16:31:51,057 price_predictor 164 8984 Training realistic price prediction model...
+WARNING 2025-10-23 16:32:01,134 price_predictor 164 8984 FAO API Error: HTTPConnectionPool(host='fenixservices.fao.org', port=80): Read timed out. (read timeout=10)
+WARNING 2025-10-23 16:32:01,135 price_predictor 164 8984 No FAO data retrieved, using fallback
+INFO 2025-10-23 16:32:01,135 price_predictor 164 8984 Using realistic synthetic data
+INFO 2025-10-23 16:32:01,490 price_predictor 164 8984 Realistic model trained - Train MAE: $0.027/kg, Test MAE: $0.041/kg
+INFO 2025-10-23 16:32:01,503 price_predictor 164 8984 Realistic model saved with features: ['month', 'year', 'day_of_year', 'is_high_season', 'is_low_season', 'crop_Maize', 'crop_Rice', 'crop_Beans', 'crop_Cassava', 'crop_Wheat', 'crop_Tomatoes', 'crop_Potatoes']
+INFO 2025-10-23 16:32:01,503 price_predictor 164 8984 Realistic price model trained successfully
+INFO 2025-10-23 16:32:01,503 gemini_client 164 8984 Gemini AI REST client initialized successfully
+INFO 2025-10-23 16:32:01,503 direct_gemini_client 164 8984 Direct Gemini AI client initialized
+INFO 2025-10-23 16:34:55,944 price_predictor 1352 3092 Training realistic price prediction model...
+WARNING 2025-10-23 16:35:05,317 price_predictor 1352 3092 FAO API Error: Expecting value: line 1 column 1 (char 0)
+WARNING 2025-10-23 16:35:05,332 price_predictor 1352 3092 No FAO data retrieved, using fallback
+INFO 2025-10-23 16:35:05,332 price_predictor 1352 3092 Using realistic synthetic data
+INFO 2025-10-23 16:35:06,564 price_predictor 1352 3092 Realistic model trained - Train MAE: $0.027/kg, Test MAE: $0.041/kg
+INFO 2025-10-23 16:35:06,578 price_predictor 1352 3092 Realistic model saved with features: ['month', 'year', 'day_of_year', 'is_high_season', 'is_low_season', 'crop_Maize', 'crop_Rice', 'crop_Beans', 'crop_Cassava', 'crop_Wheat', 'crop_Tomatoes', 'crop_Potatoes']
+INFO 2025-10-23 16:35:06,579 price_predictor 1352 3092 Realistic price model trained successfully
+INFO 2025-10-23 16:35:06,589 crop_recommender 1352 3092 Gemini API Key configured: True
+INFO 2025-10-23 16:35:06,590 crop_recommender 1352 3092 Gemini AI configured successfully with model: gemini-pro
+INFO 2025-10-23 16:35:06,702 crop_recommender 1352 3092 Crop recommendation model loaded successfully
+INFO 2025-10-23 16:35:06,703 price_predictor 1352 3092 Training realistic price prediction model...
+WARNING 2025-10-23 16:35:16,079 price_predictor 1352 3092 FAO API Error: Expecting value: line 1 column 1 (char 0)
+WARNING 2025-10-23 16:35:16,080 price_predictor 1352 3092 No FAO data retrieved, using fallback
+INFO 2025-10-23 16:35:16,080 price_predictor 1352 3092 Using realistic synthetic data
+INFO 2025-10-23 16:35:16,427 price_predictor 1352 3092 Realistic model trained - Train MAE: $0.027/kg, Test MAE: $0.041/kg
+INFO 2025-10-23 16:35:16,441 price_predictor 1352 3092 Realistic model saved with features: ['month', 'year', 'day_of_year', 'is_high_season', 'is_low_season', 'crop_Maize', 'crop_Rice', 'crop_Beans', 'crop_Cassava', 'crop_Wheat', 'crop_Tomatoes', 'crop_Potatoes']
+INFO 2025-10-23 16:35:16,441 price_predictor 1352 3092 Realistic price model trained successfully
+INFO 2025-10-23 16:35:16,441 gemini_client 1352 3092 Gemini AI REST client initialized successfully
+INFO 2025-10-23 16:35:16,441 direct_gemini_client 1352 3092 Direct Gemini AI client initialized
+INFO 2025-10-23 16:35:25,296 price_predictor 13320 18220 Training realistic price prediction model...
+WARNING 2025-10-23 16:35:34,664 price_predictor 13320 18220 FAO API Error: Expecting value: line 1 column 1 (char 0)
+WARNING 2025-10-23 16:35:34,664 price_predictor 13320 18220 No FAO data retrieved, using fallback
+INFO 2025-10-23 16:35:34,664 price_predictor 13320 18220 Using realistic synthetic data
+INFO 2025-10-23 16:35:35,705 price_predictor 13320 18220 Realistic model trained - Train MAE: $0.027/kg, Test MAE: $0.041/kg
+INFO 2025-10-23 16:35:35,720 price_predictor 13320 18220 Realistic model saved with features: ['month', 'year', 'day_of_year', 'is_high_season', 'is_low_season', 'crop_Maize', 'crop_Rice', 'crop_Beans', 'crop_Cassava', 'crop_Wheat', 'crop_Tomatoes', 'crop_Potatoes']
+INFO 2025-10-23 16:35:35,724 price_predictor 13320 18220 Realistic price model trained successfully
+INFO 2025-10-23 16:35:35,800 crop_recommender 13320 18220 Gemini API Key configured: True
+INFO 2025-10-23 16:35:35,800 crop_recommender 13320 18220 Gemini AI configured successfully with model: gemini-pro
+INFO 2025-10-23 16:35:35,912 crop_recommender 13320 18220 Crop recommendation model loaded successfully
+INFO 2025-10-23 16:35:35,913 price_predictor 13320 18220 Training realistic price prediction model...
+WARNING 2025-10-23 16:35:44,305 price_predictor 13320 18220 FAO API Error: Expecting value: line 1 column 1 (char 0)
+WARNING 2025-10-23 16:35:44,305 price_predictor 13320 18220 No FAO data retrieved, using fallback
+INFO 2025-10-23 16:35:44,305 price_predictor 13320 18220 Using realistic synthetic data
+INFO 2025-10-23 16:35:44,780 price_predictor 13320 18220 Realistic model trained - Train MAE: $0.027/kg, Test MAE: $0.041/kg
+INFO 2025-10-23 16:35:44,794 price_predictor 13320 18220 Realistic model saved with features: ['month', 'year', 'day_of_year', 'is_high_season', 'is_low_season', 'crop_Maize', 'crop_Rice', 'crop_Beans', 'crop_Cassava', 'crop_Wheat', 'crop_Tomatoes', 'crop_Potatoes']
+INFO 2025-10-23 16:35:44,794 price_predictor 13320 18220 Realistic price model trained successfully
+INFO 2025-10-23 16:35:44,794 gemini_client 13320 18220 Gemini AI REST client initialized successfully
+INFO 2025-10-23 16:35:44,795 direct_gemini_client 13320 18220 Direct Gemini AI client initialized
